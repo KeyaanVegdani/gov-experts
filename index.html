@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="app.js" defer></script>
+  <title>SS&T Expertise</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="assets/canada.svg" class="canadaLogo">
+            <a href="" class="languageLink"> Français </a>
+        </div>
+
+    </header>
+
+    <div>
+        <div class="users-content">
+
+            <div class="text-header">
+                <h1>
+                    Space, Science & Technology Expertise
+                </h1>
+
+                <div class="tool-description">
+                    <p>
+                        This tool is a database of every employee in the Space, Science & Technlology (SS&T) sector of the Canadian Space Agency. You can search by name and expertise, or filter by department, initiative, or role.
+                    </p>
+                    <img src="assets/cubeSatPhoto3.png" class="header-photo">
+                </div>
+            </div>
+            <div class="search-wrapper">
+                <label for="search" class="search-label">Search</label>
+                <input type="search" id="search" placeholder="Search for people or expertise" data-search>
+            </div>
+
+            <h2>
+                Filters
+            </h2>
+    
+            <div class="buttons">
+                <button type="button" class="button" onclick="setAllVisible()">All</button>
+                <button type="button" class="button" onclick="setDirectorate('Planning and Integration')">Planning & Integration</button>
+                <button type="button" class="button" onclick="setDirectorate('Technology Development Management')">Technology Development Management</button>
+                <button type="button" class="button" onclick="setDirectorate('Engineering Development')">Engineering Development</button>
+                <button type="button" class="button" onclick="setDirectorate('Director General')">Dg's Office</button>
+            </div>
+        </div>
+    </div>
+
+ 
+    <div class="persons">
+        <div class="users-content">
+
+            <div class="user-cards" data-user-cards-container></div>
+            <template data-user-template>
+              <div class="card">
+                  <div>
+                      <div class="header" data-header></div>
+                      <div class="job-title" data-title></div>
+                      <div class="expertise" data-expertise></div>
+                      <div class="body" data-body></div>
+                      <a class="email" data-email> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#26374A"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></a>
+                      <div class="directorate" data-directorate></div>
+                      <div class="supervisor" data-supervisor></div>
+                  </div>
+                  <img class="person-img" data-img>
+                
+          
+              </div>
+          </template>
+          </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+  .search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    font-family: Lato, sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+  }
+  
+  input {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Lato, sans-serif;
+    padding: 0.5rem;
+  }
+
+  .search-label{
+    font-family: Lato, sans-serif;
+    color: #555555;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  h2{
+    font-family: Lato, sans-serif;
+    color: #555555;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
+  
+  .user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .card {
+
+    background-color: white;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem #b9b9b9;
+
+  }
+
+  .button{
+    font-family: Lato, sans-serif;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    background-color: #26374A;
+    border: solid black 0.0rem;
+    text-align: center;
+    display: inline-block;
+    color: white;
+  }
+
+  .button:hover, .button:focus{
+    background-color: #444444;
+    color: white;
+    cursor:pointer;
+  }
+
+  .buttons{
+    margin: auto;
+    width: fit-content;
+  }
+
+  .person-img{
+    max-width: 100%;
+  }
+
+  
+  
+  .header {
+    margin-bottom: .25rem;
+    font-family: Lato, sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #444444;
+  }
+  
+  .body {
+    font-size: .8rem;
+    color: #000000;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    max-width: 20rem;
+    margin-bottom: 1rem;
+  }
+
+  .job-title{
+    font-family: Lato, sans-serif;
+    color: #AF3C43;
+    margin-bottom: 0.25rem;
+  }
+
+  .expertise{
+    font-family: Lato, sans-serif;
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+    background-color: #AF3C43;
+    max-width: fit-content;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+  }
+
+  .email{
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #26374A;
+    
+  }
+
+  .email:hover{
+    svg{
+      fill: #555555;
+      transform: scale(101%);
+    }
+  }
+
+  .directorate{
+    font-family: Lato, sans-serif;
+    font-size: 0.6rem;
+    margin-top: 1rem;
+    background-color: #555555;
+    max-width: fit-content;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.4rem;
+  }
+
+  .supervisor{
+    font-family: Roboto, sans-serif;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  .users-content{
+    margin: auto;
+    max-width: 70rem;
+    margin-bottom: 3rem;
+  }
+
+  h1{
+    font-size: 2.5rem;
+    font-family: Lato, sans-serif;
+    color: #555555;
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.05rem solid #AF3C43;
+    font-weight: 600;
+}
+
+
+.csa_logo{
+    max-width: 15rem;
+    margin-top: 3rem;
+}
+
+.persons{
+  background-color: #e7e9f0;
+  border-radius: 1rem;
+  padding-top: 0.001rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  max-width: 70rem;
+  margin:auto;
+}
+
+.canadaLogo{
+  max-width: 18rem;
+  margin-right: 2rem;
+}
+
+header{
+  border-bottom: 0.15rem solid #444444;
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+.header-content{
+  margin: auto;
+  align-items: center;
+  max-width: 70rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.languageLink{
+  float: right;
+  text-align: right;
+  font-family: Lato, sans-serif;
+  color:#444444;
+}
+
+.tool-description{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+p{
+  font-family: Lato, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555555;
+  margin-right: 5rem;
+}
+
+.header-photo{
+  max-width: 70%;
+  margin: auto;
+}
